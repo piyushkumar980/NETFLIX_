@@ -1,0 +1,817 @@
+/* .body-no-scroll {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  max-height: 5.5rem;
+  box-shadow: 0.5px 0.15px;
+  background-color: black;
+}
+
+.netflixLogo {
+  width: auto;
+  opacity: 1;
+  height: 11rem;
+  width: 10.5rem;
+  margin-left: 3rem;
+  margin-top: 1.1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.headerSignOut {
+  font-family: netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  margin-right: 2.3rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.headerSignOut:hover {
+  text-decoration: underline;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background: black;
+  overflow: hidden;
+  text-align: center;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #ff1a1a, #ff4d4d);
+  border-radius: 50% / 100% 100% 0 0;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 128, 255, 0.5),
+    rgba(30, 144, 255, 0)
+  );
+  filter: blur(10px);
+}
+
+
+.carouselContainer {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.trendingText {
+  color: white;
+  margin-left: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.carouselContent {
+  width: 90%;
+  height: 18rem;
+  position: relative;
+  background-color: #000000a0;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  margin-left: 4.3rem;
+}
+
+.cardsWrapper {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imageContainer {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 185px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #333;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imageContainer:hover {
+  transform: scale(1.1);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.thirdimageContainer {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 185px;
+  height: 200px;
+  overflow: hidden;
+   display: inline-block;
+  border-radius: 10px;
+  background-color: #333;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thirdimageContainer:hover .playButton {
+  opacity: 1;
+}
+
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.number {
+  position: absolute;
+  top: 175px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  border: 4px solid white;
+  z-index: 1;
+}
+
+.carouselBtn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.carouselBtn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+
+.carouselContainer {
+  position: relative;
+}
+
+.carouselBtn2 {
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.carouselBtn2:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+
+.carouselContainer {
+  position: relative;
+}
+
+.carouselBtn3 {
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.carouselBtn3:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+
+.overlayContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlayContent {
+  width: 65%;
+  height: 80%;
+  background: #222;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(-50%);
+  top: 45%;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.closeButton:hover {
+  color: red;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
+  .netflixLogo {
+    height: 3rem;
+  }
+  .headerSignOut {
+    font-size: 1rem;
+  }
+  .trendingText {
+    font-size: 1.5rem;
+  }
+  .carouselContent {
+    width: 95%;
+    height: 15rem;
+  }
+  .imageContainer {
+    width: 150px;
+    height: 200px;
+  }
+  .overlayContent {
+    width: 90%;
+    height: 70%;
+  }
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .body-no-scroll {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  max-height: 5.5rem;
+  box-shadow: 0.5px 0.15px;
+  background-color: black;
+}
+
+.netflixLogo {
+  width: auto;
+  opacity: 1;
+  height: 11rem;
+  width: 10.5rem;
+  margin-left: 3rem;
+  margin-top: 1.1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .netflixLogo {
+    height: 8rem;
+    width: 8rem;
+    margin-left: 1rem;
+  }
+}
+
+.headerSignOut {
+  font-family: netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  margin-right: 2.3rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.headerSignOut:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .headerSignOut {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background: black;
+  overflow: hidden;
+  text-align: center;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #ff1a1a, #ff4d4d);
+  border-radius: 50% / 100% 100% 0 0;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 128, 255, 0.5),
+    rgba(30, 144, 255, 0)
+  );
+  filter: blur(10px);
+}
+
+/* carousel section */
+.carouselContainer {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.trendingText {
+  color: white;
+  margin-left: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .trendingText {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+
+.carouselContent {
+  width: 90%;
+  height: 18rem;
+  position: relative;
+  background-color: #000000a0;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  margin-left: 4.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .carouselContent {
+    width: 95%;
+    height: 15rem;
+    margin-left: 1rem;
+  }
+}
+
+.cardsWrapper {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imageContainer {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 185px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #333;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .imageContainer {
+    width: 150px;
+    height: 200px;
+  }
+}
+
+.imageContainer:hover {
+  transform: scale(1.1);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.thirdimageContainer {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 185px;
+  height: 200px;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #333;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thirdimageContainer:hover .playButton {
+  opacity: 1;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.number {
+  position: absolute;
+  top: 175px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  border: 4px solid white;
+  z-index: 1;
+}
+
+.carouselBtn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.carouselBtn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.carouselContainer {
+  position: relative;
+}
+
+.carouselBtn2 {
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.carouselBtn2:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+.carouselContainer {
+  position: relative;
+}
+
+.carouselBtn3 {
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.carouselBtn3:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+.overlayContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlayContent {
+  width: 65%;
+  height: 80%;
+  background: #222;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(-50%);
+  top: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .overlayContent {
+    width: 90%;
+    height: 70%;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.closeButton:hover {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
+  .netflixLogo {
+    height: 3rem;
+  }
+  .headerSignOut {
+    font-size: 1rem;
+  }
+  .trendingText {
+    font-size: 1.5rem;
+  }
+  .carouselContent {
+    width: 95%;
+    height: 15rem;
+  }
+  .imageContainer {
+    width: 150px;
+    height: 200px;
+  }
+  .overlayContent {
+    width: 90%;
+    height: 70%;
+  }
+}

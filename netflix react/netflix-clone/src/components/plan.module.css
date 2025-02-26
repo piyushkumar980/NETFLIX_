@@ -1,0 +1,594 @@
+/* .body {
+  height: 45rem;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #141414, #000000);
+  color: white;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  max-height: 0.5rem;
+}
+
+.netflixlogo {
+  opacity: 1;
+  height: 11rem;
+  width: 10.5rem;
+  margin-left: 3rem;
+  margin-top: 1.1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.headersignout {
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu",
+    sans-serif;
+  margin-right: 2.3rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.headersignout:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 40rem;
+  height: 30rem;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 40px rgba(229, 9, 20, 0.3);
+  animation: fadeIn 2s ease-in-out, float 5s ease-in-out infinite;
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: slideDown 1.5s ease-in-out, glow 2s infinite alternate;
+}
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 1em;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.buttonFree {
+  background-color: #333;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #ff0a16;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.6);
+}
+
+.buttonFree:hover {
+  background-color: #444;
+  box-shadow: 0 0 20px rgba(51, 51, 51, 0.6);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 50px;
+  font-size: 1rem;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.footerLink {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-size: 1.5rem;
+}
+.footerLink1 {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-size: 1rem;
+}
+.footerLink:hover {
+  color: #ff0a16;
+  text-shadow: 0 0 10px rgba(229, 9, 20, 0.8);
+}
+.footerLink1:hover {
+  color: #ff0a16;
+  text-shadow: 0 0 10px rgba(229, 9, 20, 0.8);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(229, 9, 20, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(229, 9, 20, 0.8);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(229, 9, 20, 0.1) 10%,
+    transparent 10.01%
+  );
+  background-size: 20px 20px;
+  animation: moveBackground 10s linear infinite;
+  z-index: -1;
+}
+ 
+@keyframes moveBackground {
+  from {
+    transform: translateY(0) translateX(0);
+  }
+  to {
+    transform: translateY(-1000px) translateX(-1000px);
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body {
+  height: 45rem;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #141414, #000000);
+  color: white;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    padding: 20px;
+    height: auto;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  max-height: 0.5rem;
+}
+
+.netflixlogo {
+  opacity: 1;
+  height: 11rem;
+  width: 10.5rem;
+  margin-left: 3rem;
+  margin-top: 1.1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .netflixlogo {
+    height: 8rem;
+    width: 8rem;
+    margin-left: 1rem;
+  }
+}
+
+.headersignout {
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu",
+    sans-serif;
+  margin-right: 2.3rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.headersignout:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .headersignout {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.container {
+  width: 40rem;
+  height: 30rem;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 40px rgba(229, 9, 20, 0.3);
+  animation: fadeIn 2s ease-in-out, float 5s ease-in-out infinite;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    margin-top: 5rem;
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 5rem;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: slideDown 1.5s ease-in-out, glow 2s infinite alternate;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2em;
+  }
+}
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    font-size: 1em;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 1em;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.buttonFree {
+  background-color: #333;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #ff0a16;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.6);
+}
+
+.buttonFree:hover {
+  background-color: #444;
+  box-shadow: 0 0 20px rgba(51, 51, 51, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 50px;
+  font-size: 1rem;
+  animation: fadeIn 3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    gap: 1rem;
+    margin-top: 30px;
+  }
+}
+
+.footerLink {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.footerLink1 {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-size: 1rem;
+}
+
+.footerLink:hover {
+  color: #ff0a16;
+  text-shadow: 0 0 10px rgba(229, 9, 20, 0.8);
+}
+
+.footerLink1:hover {
+  color: #ff0a16;
+  text-shadow: 0 0 10px rgba(229, 9, 20, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  .footerLink {
+    font-size: 1.2rem;
+  }
+
+  .footerLink1 {
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(229, 9, 20, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(229, 9, 20, 0.8);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(229, 9, 20, 0.1) 10%,
+    transparent 10.01%
+  );
+  background-size: 20px 20px;
+  animation: moveBackground 10s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveBackground {
+  from {
+    transform: translateY(0) translateX(0);
+  }
+  to {
+    transform: translateY(-1000px) translateX(-1000px);
+  }
+}
