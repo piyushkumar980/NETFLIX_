@@ -29,7 +29,7 @@ const Welcome = () => {
 
     const checkEmailExists = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/auth/check-email", {
+        const response = await fetch("https://netflix-vcrl.onrender.com/api/auth/check-email", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email }),
@@ -69,7 +69,7 @@ const Welcome = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/register", {
+      const response = await fetch("https://netflix-vcrl.onrender.com/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

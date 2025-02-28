@@ -8,10 +8,6 @@ const Pushpa = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handleWatchNow = () => {
-    // const movieId = "67b4c44cadd80ac0afc4544a"; 
-    // const videoUrl = "https://drive.google.com/file/d/17LH55QpUKDUxa0mHJ7I_fNkmaB-3AQ3a/preview"; 
-
-    // navigate(`/play`, { state: { movieId, videoUrl } });
     
       const movieId = "67b4c44cadd80ac0afc4544a"; 
       const videoUrl = "https://drive.google.com/file/d/17LH55QpUKDUxa0mHJ7I_fNkmaB-3AQ3a/preview?autoplay=1"; 

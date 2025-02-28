@@ -49,7 +49,7 @@ const Payment = () => {
 
     let config = {
       method: "post",
-      url: "http://localhost:5000/api/orders",
+      url: "https://netflix-vcrl.onrender.com/api/orders",
       headers: {
         "Content-Type": "application/json",
       },

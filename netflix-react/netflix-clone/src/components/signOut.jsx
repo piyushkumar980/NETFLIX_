@@ -17,7 +17,7 @@ const SignOut = () => {
     }
 
     axios
-      .post("http://localhost:5000/api/auth/logout")
+      .post("https://netflix-vcrl.onrender.com/api/auth/logout")
       .then(() => {
         setFlashMessage(
           language === "Hindi"
