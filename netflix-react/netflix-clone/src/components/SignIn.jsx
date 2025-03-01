@@ -19,7 +19,7 @@ const SignIn = () => {
     const storedLanguage =
       localStorage.getItem("selectedLanguage") || "English";
     setLanguage(storedLanguage);
-  }, []);
+  }, []); 
 
   const extractNameFromEmail = (email) => {
     if (!email) return "";

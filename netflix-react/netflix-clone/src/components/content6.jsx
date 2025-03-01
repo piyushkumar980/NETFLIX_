@@ -243,7 +243,7 @@ const Content6 = ({ language }) => {
                 : "Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see."}
             </p>
           </div>
-        )}
+        )} 
 
         <h3 className="content6-last-heading">
           {language === "Hindi"

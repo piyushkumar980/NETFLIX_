@@ -2,7 +2,7 @@ import "../App.css";
 import React from "react";
 
 const Content7 = () => {
-  return (
+  return ( 
     <div class="content7">
       <div class="content7-top">
         <span>Questions? Call</span>

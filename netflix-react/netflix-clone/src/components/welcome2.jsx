@@ -18,7 +18,7 @@ const Welcome2 = () => {
     if (storedLanguage) {
       setLanguage(storedLanguage);
     }
-  }, []);
+  }, []); 
 
   return (
     <div className={styles.container}>

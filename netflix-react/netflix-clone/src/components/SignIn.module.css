@@ -736,7 +736,11 @@
   pointer-events: auto;
   z-index: 10;
 }
-
+@media screen and (max-width: 1200px) {
+  .eyeIcon {
+   right: 20px;
+  }
+}
 .eyeIcon:hover {
   color: rgb(122, 119, 119);
 }

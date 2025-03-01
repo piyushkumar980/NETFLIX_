@@ -14,7 +14,7 @@ const Content3 = ({ language }) => {
     para2: language === "Hindi" ? "डाउनलोड हो रहा है..." : "Downloading..."
   };
 
-  return (
+  return ( 
     <>
     <div className="content3">
       <div className="content3-left">
