@@ -91,7 +91,7 @@ const SignIn = () => {
       <div className={styles.maincontent}>
         <div className={styles.dummyBOX}>
           <h1 className={styles.signinoptions}>
-            {language === "Hindi" ? "साइन इन करें" : "Sign In"}
+            {language === "Hindi" ? "लॉग इन करें" : "Log In"}
           </h1>
 
           {flashMessage && <p className={styles.flashMessage}>{flashMessage}</p>}
