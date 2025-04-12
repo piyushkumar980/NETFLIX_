@@ -109,7 +109,7 @@ const Content1 = () => {
               id="netflix-header-button2"
               onClick={() => navigate("/signin")}
             >
-              {language === "English" ? "Log In" : "साइन इन"}
+              {language === "English" ? "Log In" : "लॉग इन"}
             </button>
           </div>
         </header>
