@@ -45,7 +45,7 @@ const Content1 = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://netflix-vcrl.onrender.com/api/auth/check-email",
+        "https://netflix-0cfk.onrender.com/api/auth/check-email",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

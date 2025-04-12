@@ -38,7 +38,7 @@ const UploadMovie = () => {
     setMessage("⏳ Uploading... Please wait.");
 
     try {
-      const response = await fetch("https://netflix-vcrl.onrender.com/api/movies/add", {
+      const response = await fetch("https://netflix-0cfk.onrender.com/api/movies/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
