@@ -16,7 +16,7 @@ const PlayMovie = () => {
       console.error("No movie ID provided!"); 
       navigate("/"); // Redirect home if no movie ID
       return;
-    }
+    } 
 
     if (passedVideoUrl.includes("drive.google.com")) {
       const videoId = passedVideoUrl.split("/d/")[1]?.split("/")[0]; // Extract file ID
@@ -32,6 +32,7 @@ const PlayMovie = () => {
 
   return (
     <div className={styles.container}>
+       <button className={styles.closeButton} onClick={() => navigate(-1)}>✖</button>
       <div className={styles.videoContainer}>
         {error ? (
           <p className={styles.error}>⚠️ {error}</p>

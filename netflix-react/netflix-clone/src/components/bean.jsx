@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./bean.module.css";
 import text from "../assets/mrbeantext.png";
 
-const MrBean = () => {
+const MrBean = () => { 
   const navigate = useNavigate();
   const [isPlaying, setIsPlaying] = useState(false);
 

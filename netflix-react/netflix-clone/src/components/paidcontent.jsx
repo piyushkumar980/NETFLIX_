@@ -14,7 +14,7 @@ import devara from "../assets/devara.webp";
 import chotabheem from "../assets/chotabheem.jpeg";
 import motupatlu from "../assets/motupatlu.jpeg";
 import ninjahattori from "../assets/ninjahattori.png";
-import doraemon from "../assets/doraemon.jpeg";
+import doraemon from "../assets/doraemon.jpeg"; 
 import shinchan from "../assets/shinchan.png";
 import tomnjerry from "../assets/tomnjerry.jpeg";
 import mrbean from "../assets/mrbean.jpeg";

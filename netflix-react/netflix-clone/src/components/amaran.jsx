@@ -20,7 +20,7 @@ const Amaran = () => {
         <img className={styles.image} src={text} alt="image" />
         <div className={styles.tags}>
           <span className={styles.tag}>2024</span>
-          <span className={styles.tag}>U/A 16+</span>
+          <span className={styles.tag}>U/A 16+</span> 
           <span className={styles.tag}>Movie</span>
           <span className={styles.tag}>Action</span>
           <span className={styles.tag}>Romance</span>

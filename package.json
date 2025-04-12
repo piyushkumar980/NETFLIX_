@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-  "dev": "node netflix-backend/server.js",
-  "start": "node netflix-backend/server.js",
-  "build": "npm install && npm install --prefix netflix-react/netflix-clone && npm run build --prefix netflix-react/netflix-clone"
-},
+    "dev": "node netflix-backend/server.js",
+    "start": "node netflix-backend/server.js",
+    "build": "npm install && npm install --prefix netflix-react/netflix-clone && npm run build --prefix netflix-react/netflix-clone"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

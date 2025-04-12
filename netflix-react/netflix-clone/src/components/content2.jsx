@@ -5,7 +5,7 @@ import tvVideo from "../Videos/video-tv-in-0819.m4v";
 
 const Content2 = ({ language = "English" }) => {
   return (
-    <>
+    <> 
       <div className="content2">
         <div className="content2-left">
           <h1 className="content2-heading1">
@@ -22,7 +22,7 @@ const Content2 = ({ language = "English" }) => {
           <video className="content2-right-vdo" src={tvVideo} autoPlay loop muted playsInline></video>
         </div>
       </div>
-      <div class="BOX"></div> 
+      <div className="BOX"></div> 
     </>
   );
 }; 

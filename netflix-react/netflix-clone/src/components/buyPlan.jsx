@@ -15,7 +15,7 @@ const BuyPlan = () => {
       setLanguage(storedLanguage);
     }
   }, []);
-
+ 
   const handlePlanSelect = (plan) => {
     setSelectedPlan(plan);
 

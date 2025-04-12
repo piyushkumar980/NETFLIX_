@@ -21,7 +21,7 @@ const Freemovie = () => {
         frameBorder="0"
         allow="autoplay; fullscreen"
         allowFullScreen
-      ></iframe>
+      ></iframe> 
     </div>
   );
 };

@@ -9,7 +9,7 @@ import Content4 from "./content4";
 import Content5 from "./content5";
 import Content6 from "./content6"; 
 import Content7 from "./content7";
- 
+  
 const Content1 = () => {
   const navigate = useNavigate(); 
   const [email, setEmail] = useState("");

@@ -16,7 +16,7 @@ const Welcome2 = () => {
     }
     const storedLanguage = localStorage.getItem("selectedLanguage");
     if (storedLanguage) {
-      setLanguage(storedLanguage);
+      setLanguage(storedLanguage); 
     }
   }, []); 
 

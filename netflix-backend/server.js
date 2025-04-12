@@ -20,10 +20,11 @@ app.use(express.json()); // Parse JSON data
 app.use(express.urlencoded({ extended: true })); // Parse form data
 app.use(
   cors({
-    origin: ["https://netflix-vcrl.onrender.com"], // Allowed origins
-    credentials: true, // Enable credentials
+    origin: ["http://localhost:5173", "https://netflix-vcrl.onrender.com"],
+    credentials: true,
   })
 );
+app.options("*", cors());
 app.use(cookieParser());
 app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // Serve uploaded files
 
@@ -172,7 +173,7 @@ mongoose
 // });
 
 app.use(express.static(path.join(_dirname,"/netflix-react/netflix-clone/dist")));
-app.get('*',(_,res)=>{
+app.get('*',(req,res)=>{
   res.sendFile(path.resolve(_dirname,"netflix-react/netflix-clone","dist","index.html"));
 });
 

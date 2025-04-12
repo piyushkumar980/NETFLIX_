@@ -54,3 +54,17 @@
     height: 100%;
     object-fit: cover;
   }
+  .closeButton {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    background: black;
+    color: white; 
+    border: none;
+    font-size: 20px;
+    padding: 12px;
+    cursor: pointer;
+  }
+  .closeButton:hover {
+    color: red;
+  }

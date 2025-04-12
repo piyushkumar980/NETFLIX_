@@ -41,7 +41,7 @@ const Content3 = ({ language }) => {
         <h2 className="content3-heading2">{content.heading2}</h2>
       </div>
     </div>
-    <div class="BOX"></div>
+    <div className="BOX"></div>
     </>
   );
 };
