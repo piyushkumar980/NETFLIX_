@@ -32,7 +32,7 @@ const SignIn = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://netflix-0cfk.onrender.com/api/auth/login", {
+      const response = await axios.post("https://netflix-nvcs.onrender.com/api/auth/login", {
         email,
         password,
       });

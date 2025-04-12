@@ -20,7 +20,7 @@ app.use(express.json()); // Parse JSON data
 app.use(express.urlencoded({ extended: true })); // Parse form data
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://netflix-0cfk.onrender.com"],
+    origin: ["http://localhost:5173", "https://netflix-nvcs.onrender.com"],
     credentials: true,
   })
 );

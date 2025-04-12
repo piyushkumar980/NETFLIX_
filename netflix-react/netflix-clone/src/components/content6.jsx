@@ -34,7 +34,7 @@ const Content6 = ({ language }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://netflix-0cfk.onrender.com/api/auth/check-email",
+        "https://netflix-nvcs.onrender.com/api/auth/check-email",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

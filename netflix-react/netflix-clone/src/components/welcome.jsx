@@ -69,7 +69,7 @@ const Welcome = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://netflix-0cfk.onrender.com/api/auth/register", {
+      const response = await fetch("https://netflix-nvcs.onrender.com/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
