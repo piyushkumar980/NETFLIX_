@@ -29,11 +29,12 @@ const Welcome = () => {
 
     const checkEmailExists = async () => {
       try {
-        const response = await fetch("https://netflix-0cfk.onrender.com/api/auth/check-email", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email }),
-        });
+        const response = await fetch("https://netflix-nvcs.onrender.com/api/auth/check-email", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  credentials: "include", // 👈 REQUIRED if using cookies or JWT with HttpOnly
+  body: JSON.stringify({ email }),
+});
 
         const data = await response.json();
         if (data.exists) {
@@ -70,10 +71,12 @@ const Welcome = () => {
 
     try {
       const response = await fetch("https://netflix-nvcs.onrender.com/api/auth/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      });
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  credentials: "include", // 👈
+  body: JSON.stringify({ email, password }),
+});
+
 
       const data = await response.json();
 
