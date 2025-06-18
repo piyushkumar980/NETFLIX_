@@ -18,13 +18,32 @@ const _dirname = path.resolve();
 // ✅ Middleware
 app.use(express.json()); // Parse JSON data
 app.use(express.urlencoded({ extended: true })); // Parse form data
+// app.use(
+//   cors({
+//     origin: ["http://localhost:5173", "https://netflix-nvcs.onrender.com"],
+//     credentials: true,
+//   })
+// );
+// app.options("*", cors());
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://netflix-nvcs.onrender.com"
+];
+
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://netflix-nvcs.onrender.com"],
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
-app.options("*", cors());
+
 app.use(cookieParser());
 app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // Serve uploaded files
 
